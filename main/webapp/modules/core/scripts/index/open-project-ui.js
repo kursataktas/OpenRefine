@@ -42,7 +42,7 @@ Refine.OpenProjectUI = function(elmt) {
   $('#projects-workspace-open').text($.i18n('core-index-open/browse'));
   $('#projects-workspace-open').on('click',function() {
     Refine.postCSRF(
-      "command/core/open-workspace-dir",
+      "command/core/open-extensions-dir",
       {},
       function (data) {
         if (data.code != "ok" && "message" in data) {
